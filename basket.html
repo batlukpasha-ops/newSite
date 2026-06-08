@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowHome — Корзина</title>
+    <link rel="stylesheet" href="templates/css/basket.css">
+    <link rel="icon" href="templates/img/logo.png">
+</head>
+<body>
+
+<div class="basket-page">
+    <a href="main.html" class="basket-close">
+        <span>Закрыть</span>
+        <div>×</div>
+    </a>
+
+    <h1 class="basket-title">Ваш заказ:</h1>
+
+    <main class="basket-main">
+        <section class="basket-top">
+            <div class="basket-columns">
+                <div class="basket-left">
+                    <div class="basket-block-title">Покупатель</div>
+
+                    <form class="basket-form">
+                        <div class="basket-field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email">
+                        </div>
+
+                        <div class="basket-field">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone">
+                        </div>
+
+                        <div class="basket-field">
+                            <label for="name">Имя</label>
+                            <input type="text" id="name">
+                        </div>
+
+                        <div class="basket-register">
+                            <label for="register">Зарегистрировать аккаунт?</label>
+                            <input type="checkbox" id="register">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="basket-right">
+                    <div class="basket-block-title">Доставка</div>
+
+                    <form class="basket-delivery">
+                        <label class="basket-check">
+                            <input type="checkbox">
+                            <span>Самовывоз (Санкт-Петербург, улица Мира, 2/11)</span>
+                        </label>
+
+                        <label class="basket-check">
+                            <input type="checkbox">
+                            <span>Курьерская доставка от 290 р.</span>
+                        </label>
+
+                        <label class="basket-check">
+                            <input type="checkbox">
+                            <span>Экспресс доставка от 350 р.</span>
+                        </label>
+
+                        <label class="basket-check">
+                            <input type="checkbox">
+                            <span>Доставка до ПВЗ СДЭК, Грастин (оплачивается по тарифам компании)</span>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="basket-comment">
+            <h3>Комментарий</h3>
+            <textarea placeholder="Комментарий"></textarea>
+        </section>
+
+        <section class="basket-table-wrap desktop-cart">
+            <table class="basket-table">
+                <thead>
+                    <tr>
+                        <th>Фото</th>
+                        <th>Наименование товара</th>
+                        <th>Кол-во</th>
+                        <th>Цена</th>
+                        <th>Итого</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="basket-photo">
+                            <img src="templates/img/image-6.png" alt="Колеус микс">
+                        </td>
+                        <td class="basket-name">Колеус микс</td>
+                        <td>
+                            <div class="basket-qty">
+                                <button type="button">-</button>
+                                <span>1</span>
+                                <button type="button">+</button>
+                            </div>
+                        </td>
+                        <td>1490 р.</td>
+                        <td>1490 р.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="basket-photo">
+                            <img src="templates/img/image-7.png" alt="Антуриум Андре Лилли">
+                        </td>
+                        <td class="basket-name">Антуриум Андре Лилли</td>
+                        <td>
+                            <div class="basket-qty">
+                                <button type="button">-</button>
+                                <span>1</span>
+                                <button type="button">+</button>
+                            </div>
+                        </td>
+                        <td>1490 р.</td>
+                        <td>1490 р.</td>
+                    </tr>
+
+                    <tr class="basket-empty-row">
+                        <td colspan="5"></td>
+                    </tr>
+
+                    <tr class="basket-empty-row">
+                        <td colspan="5"></td>
+                    </tr>
+
+                    <tr class="basket-empty-row">
+                        <td colspan="5"></td>
+                    </tr>
+
+                    <tr class="basket-total-row">
+                        <td colspan="4"></td>
+                        <td>
+                            <input type="text" class="basket-coupon-input">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="mobile-cart">
+            <div class="mobile-cart-box">
+                <div class="mobile-cart-item">
+                    <img src="templates/img/image-6.png" alt="Колеус микс">
+                    <h4>Колеус микс</h4>
+                    <div class="mobile-qty">
+                        <button type="button">-</button>
+                        <span>1</span>
+                        <button type="button">+</button>
+                    </div>
+                    <p class="mobile-price">1490 р.</p>
+                </div>
+
+                <div class="mobile-cart-item">
+                    <img src="templates/img/image-7.png" alt="Антуриум Андре Лилли">
+                    <h4>Антуриум Андре Лилли</h4>
+                    <div class="mobile-qty">
+                        <button type="button">-</button>
+                        <span>1</span>
+                        <button type="button">+</button>
+                    </div>
+                    <p class="mobile-price">1490 р.</p>
+                </div>
+
+                <div class="mobile-summary">
+                    <p>Итого: 2980 р.</p>
+                    <p>Самовывоз (Санкт-Петербург, улица Мира, 2/11)</p>
+                    <div class="mobile-coupon">
+                        <label for="promo">Купон:</label>
+                        <input type="text" id="promo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="basket-submit">
+            <button type="button">оформить</button>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
